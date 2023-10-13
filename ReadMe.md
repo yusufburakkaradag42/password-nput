@@ -139,3 +139,300 @@ const styles = StyleSheet.create({
 
 
 })
+
+
+## flex 
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+
+export default function DesingScreen() {
+  return (
+    <View style={styles.mainView}>
+        <Text style={styles.mainTextOne}>1</Text>
+        <Text style={styles.mainTextTwo}>2</Text>
+        <Text style={styles.mainTextThree}>3</Text>
+
+    </View>
+  )
+}
+
+const styles = StyleSheet.create({
+
+    mainView:{
+        borderWidth: 1,
+        borderColor: 'black',
+        margin: 20 ,
+        borderRadius : 20 ,
+        // alignItems : 'flex-start',
+        flexDirection :'row', // dikey sıralama
+        // justifyContent : 'flex-start',
+        height : 400 , 
+
+        
+    },
+    mainTextOne:{
+        borderWidth: 1,
+        borderColor: 'red',
+        margin : 10 ,
+        padding : 20 ,
+        borderRadius: 10 ,
+         flex : 4,
+   
+    },
+    mainTextTwo:{
+        borderWidth: 1,
+        borderColor: 'red',
+         margin : 10 ,
+      //  marginHorizontal: 30 , sağdan soldan boşluk bırakma
+      //  marginVertical: 30 , // yukarıdan aşağıdan boşluk bırakma
+      padding : 20 ,
+      borderRadius: 10 ,
+      flex : 5 ,
+      
+   
+    },
+    mainTextThree:{
+        borderWidth: 1,
+        borderColor: 'red',
+         margin : 10 ,
+      //  marginHorizontal: 30 , sağdan soldan boşluk bırakma
+      //  marginVertical: 30 , // yukarıdan aşağıdan boşluk bırakma
+      padding : 20 ,
+      borderRadius: 10 ,
+     flex : 1 ,
+    },
+
+})
+
+
+##   alignSelf kullanımı 
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+
+export default function DesingScreen() {
+  return (
+    <View style={styles.mainView}>
+        <Text style={styles.mainTextOne}>1</Text>
+        <Text style={styles.mainTextTwo}>2</Text>
+        <Text style={styles.mainTextThree}>3</Text>
+
+    </View>
+  )
+}
+
+const styles = StyleSheet.create({
+
+    mainView:{
+        borderWidth: 1,
+        borderColor: 'black',
+        margin: 20 ,
+        borderRadius : 20 ,
+        height : 400 , 
+
+        
+    },
+    mainTextOne:{
+        borderWidth: 1,
+        borderColor: 'red',
+        margin : 10 ,
+        padding : 20 ,
+        borderRadius: 10 ,
+        alignSelf : 'flex-start',
+    },
+    mainTextTwo:{
+        borderWidth: 1,
+        borderColor: 'red',
+         margin : 10 ,
+        padding : 20 ,
+         borderRadius: 10 ,
+    
+      
+   
+    },
+    mainTextThree:{
+        borderWidth: 1,
+        borderColor: 'red',
+        margin : 10 ,
+        padding : 20 ,
+        borderRadius: 10 ,
+  
+    },
+
+})
+
+## Top Left  Right Bottom kullanımı 
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+
+export default function DesingScreen() {
+  return (
+    <View style={styles.mainView}>
+        <Text style={styles.mainTextOne}>1</Text>
+        <Text style={styles.mainTextTwo}>2</Text>
+        <Text style={styles.mainTextThree}>3</Text>
+
+    </View>
+  )
+}
+
+const styles = StyleSheet.create({
+
+    mainView:{
+        borderWidth: 1,
+        borderColor: 'black',
+        margin: 20 ,
+        borderRadius : 20 ,
+        height : 400 , 
+
+        
+    },
+    mainTextOne:{
+        borderWidth: 1,
+        borderColor: 'red',
+        margin : 10 ,
+        padding : 20 ,
+        borderRadius: 10 ,
+        alignSelf : 'flex-start',
+    },
+    mainTextTwo:{
+        borderWidth: 1,
+        borderColor: 'red',
+         margin : 10 ,
+        padding : 20 ,
+         borderRadius: 10 ,
+        //  top: 10 ,
+        // left: 10,
+        bottom: 10, 
+        right: 20 ,
+   
+    },
+    mainTextThree:{
+        borderWidth: 1,
+        borderColor: 'red',
+        margin : 10 ,
+        padding : 20 ,
+        borderRadius: 10 ,
+  
+    },
+
+})
+
+###### Position Absolute Kullanımı 
+  import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+
+export default function DesingScreen() {
+  return (
+    <View style={styles.mainView}>
+        <Text style={styles.mainTextOne}>1</Text>
+        {/* <Text style={styles.mainTextTwo}>2</Text>
+        <Text style={styles.mainTextThree}>3</Text> */}
+
+    </View>
+  )
+}
+
+const styles = StyleSheet.create({
+
+    mainView:{
+        borderWidth: 1,
+        borderColor: 'black',
+        margin: 20 ,
+        borderRadius : 20 ,
+        height : 400 , 
+
+        
+    },
+    mainTextOne:{
+        borderWidth: 1,
+        borderColor: 'red',
+        // margin : 10 ,
+        padding : 20 ,
+        borderRadius: 10 ,
+       position : 'absolute',
+       bottom : 0 ,
+       left : 5 ,
+    //     right: 0,
+    //     top: 0 ,
+    },
+    // mainTextTwo:{
+    //     borderWidth: 1,
+    //     borderColor: 'red',
+    //      margin : 10 ,
+    //     padding : 20 ,
+    //      borderRadius: 10 ,
+    //     //  top: 10 ,
+    //     // left: 10,
+    //     bottom: 10, 
+    //     right: 20 ,
+   
+    // },
+    // mainTextThree:{
+    //     borderWidth: 1,
+    //     borderColor: 'red',
+    //     margin : 10 ,
+    //     padding : 20 ,
+    //     borderRadius: 10 ,
+  
+    // },
+
+})
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+
+export default function DesingScreen() {
+  return (
+    <View style={styles.mainView}>
+        <Text style={styles.mainTextOne}>1</Text>
+        {/* <Text style={styles.mainTextTwo}>2</Text>
+        <Text style={styles.mainTextThree}>3</Text> */}
+
+    </View>
+  )
+}
+
+const styles = StyleSheet.create({
+
+    mainView:{
+        borderWidth: 1,
+        borderColor: 'black',
+        margin: 20 ,
+        borderRadius : 20 ,
+        height : 400 , 
+
+        
+    },
+    mainTextOne:{
+        borderWidth: 1,
+        borderColor: 'red',
+        // margin : 10 ,
+        padding : 20 ,
+        borderRadius: 10 ,
+       position : 'absolute',
+       bottom : 0 ,
+       left : 5 ,
+    //     right: 0,
+    //     top: 0 ,
+    },
+    // mainTextTwo:{
+    //     borderWidth: 1,
+    //     borderColor: 'red',
+    //      margin : 10 ,
+    //     padding : 20 ,
+    //      borderRadius: 10 ,
+    //     //  top: 10 ,
+    //     // left: 10,
+    //     bottom: 10, 
+    //     right: 20 ,
+   
+    // },
+    // mainTextThree:{
+    //     borderWidth: 1,
+    //     borderColor: 'red',
+    //     margin : 10 ,
+    //     padding : 20 ,
+    //     borderRadius: 10 ,
+  
+    // },
+
+})

@@ -3,59 +3,44 @@ import React from 'react'
 
 export default function DesingScreen() {
   return (
-    <View style={styles.mainView}>
-        <Text style={styles.mainTextOne}>1</Text>
-        <Text style={styles.mainTextTwo}>2</Text>
-        <Text style={styles.mainTextThree}>3</Text>
+    <View style={{
+      width: '100%',
+      height: '100%',
+       }}> 
+       <View style={{
+        width:'25%' ,
+        height:'25%',
+        backgroundColor:'red'
+          }} />
+     <View style={{
+        width:'25%' ,
+        height:'25%',
+        backgroundColor:'blue',
+        position: 'absolute',
+        right: 0,
 
+          }} />
+        <View style={{
+        width:'25%' ,
+        height:'25%',
+        backgroundColor:'yellow',
+        position: 'absolute',
+        bottom: 0,
+          }} />
+       <View style={{
+        width:'25%' ,
+        height:'25%',
+        backgroundColor:'green',
+        position: 'absolute',
+        bottom: 0,
+        right: 0,
+          }} />
     </View>
   )
 }
 
 const styles = StyleSheet.create({
 
-    mainView:{
-        borderWidth: 1,
-        borderColor: 'black',
-        margin: 20 ,
-        borderRadius : 20 ,
-        // alignItems : 'flex-start',
-        flexDirection :'row', // dikey sıralama
-        // justifyContent : 'flex-start',
-        height : 400 , 
-
-        
-    },
-    mainTextOne:{
-        borderWidth: 1,
-        borderColor: 'red',
-        margin : 10 ,
-        padding : 20 ,
-        borderRadius: 10 ,
-         flex : 4,
    
-    },
-    mainTextTwo:{
-        borderWidth: 1,
-        borderColor: 'red',
-         margin : 10 ,
-      //  marginHorizontal: 30 , sağdan soldan boşluk bırakma
-      //  marginVertical: 30 , // yukarıdan aşağıdan boşluk bırakma
-      padding : 20 ,
-      borderRadius: 10 ,
-      flex : 5 ,
-      
-   
-    },
-    mainTextThree:{
-        borderWidth: 1,
-        borderColor: 'red',
-         margin : 10 ,
-      //  marginHorizontal: 30 , sağdan soldan boşluk bırakma
-      //  marginVertical: 30 , // yukarıdan aşağıdan boşluk bırakma
-      padding : 20 ,
-      borderRadius: 10 ,
-     flex : 1 ,
-    },
 
 })
